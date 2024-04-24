@@ -346,6 +346,7 @@ const input_box = document.querySelector('input[type="tel"]');
 const selected_option = document.querySelector(".selected-option div");
 const label = document.querySelector(".plabel");
 const selecte_option = document.querySelector(".selected-option");
+const CountryCode = document.querySelector(".CountryCode");
 
 let options = null;
 
@@ -362,7 +363,7 @@ for (const country of countries) {
   select_box.querySelector("ol").insertAdjacentHTML("beforeend", option);
   options = document.querySelectorAll(".option");
 }
-
+input_box.value = CountryCode.innerText;
 function selectOption() {
   const phone_code = this.querySelector("strong").cloneNode(true);
 
